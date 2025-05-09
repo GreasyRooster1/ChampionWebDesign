@@ -1,4 +1,4 @@
-const divAmount = 57
+const divAmount = 28
 function generateGridCSS(){
     let str = "";
     for(let i = 1; i <= divAmount; i++){
