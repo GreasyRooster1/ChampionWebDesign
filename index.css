@@ -11,6 +11,9 @@ img{
     width:100vw;
     height:100vh;
 }
+.parent > *{
+    overflow: clip;
+}
 
 .div1{
     border:4px dashed #f48c15;
@@ -50,4 +53,9 @@ img{
     position: static;
     top: 0;
     right: 0;
+}
+
+
+.div25 img{
+    animation: smartguy-anim 1s infinite linear forwards;
 }
