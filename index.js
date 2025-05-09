@@ -1,4 +1,7 @@
 const divAmount = 28
+
+
+
 function generateGridCSS(){
     let str = "";
     for(let i = 1; i <= divAmount; i++){
@@ -13,6 +16,9 @@ function getColor(){
     let r = Math.random()*255;
     let g = Math.random()*255;
     let b = Math.random()*255;
+    r*=1.5;
+    g*=1.5;
+    b*=1.5;
     r+=20;
     g+=20;
     b+=20;
