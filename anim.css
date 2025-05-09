@@ -1,0 +1,44 @@
+@keyframes full-rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes bounce-rotate{
+    from{
+        transform: rotate(-45deg);
+    }
+    to{
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes color-wheel{
+    from{
+        filter:hue-rotate(0deg);
+    }
+    to{
+        filter:hue-rotate(360deg);
+    }
+}
+
+@keyframes scale-bounce{
+    from{
+        filter:hue-rotate(0deg);
+    }
+    to{
+        filter:hue-rotate(360deg);
+    }
+}
+
+.full-rotate-anim{
+    animation: full-rotate 2s linear infinite forwards;
+}
+.bounce-rotate-anim{
+    animation: bounce-rotate 1s linear infinite alternate;
+}
+.color-wheel-anim{
+    animation: color-wheel 1s linear infinite forwards;
+}
