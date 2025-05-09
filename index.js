@@ -10,7 +10,13 @@ function generateGridCSS(){
 }
 
 function getColor(){
-    return "#"+Math.floor(Math.random() * 0x1000000).toString(16)
+    let r = Math.random()*255;
+    let g = Math.random()*255;
+    let b = Math.random()*255;
+    r+=20;
+    g+=20;
+    b+=20;
+    return "rgb("+r+", "+g+" , "+b+")";
 }
 
 window.onload = ()=>{
