@@ -23,6 +23,7 @@ img{
     height:100%;
 }
 
+
 .div2{
     display:flex;
     flex-wrap: wrap;
@@ -30,6 +31,11 @@ img{
 .div2 img{
     width:50%;
     height:50%;
+}
+
+
+.div3{
+    background-image: url("./crazy.gif");
 }
 
 
