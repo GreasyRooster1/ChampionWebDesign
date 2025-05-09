@@ -13,15 +13,19 @@ function generateGridCSS(){
 }
 
 function getColor(){
-    let r = Math.random()*255;
-    let g = Math.random()*255;
-    let b = Math.random()*255;
-    r*=1.5;
-    g*=1.5;
-    b*=1.5;
-    r+=20;
-    g+=20;
-    b+=20;
+    let r = rand()*255;
+    let g = rand()*255;
+    let b = rand()*255;
+    let tmp = r;
+    r*=1.89;
+    g*=2.3;
+    b*=1.8;
+    r+=10;
+    g+=30;
+    b+=50;
+    r = Math.min(r,220)
+    g = Math.max(g,100)
+    b-=Math.pow(tmp,2)/1000
     return "rgb("+r+", "+g+" , "+b+")";
 }
 

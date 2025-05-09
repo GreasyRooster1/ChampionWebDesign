@@ -29,6 +29,6 @@ function sfc32(a, b, c, d) {
     }
 }
 
-const seed = cyrb128("1234");
+const seed = cyrb128("12332d4");
 // Four 32-bit component hashes provide the seed for sfc32.
 const rand = sfc32(seed[0], seed[1], seed[2], seed[3]);
