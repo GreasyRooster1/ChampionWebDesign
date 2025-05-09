@@ -32,6 +32,14 @@
         transform: scale(1.2);
     }
 }
+@keyframes big-scale-bounce{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(2);
+    }
+}
 
 .full-rotate-anim{
     animation: full-rotate 2s linear infinite forwards;
@@ -44,6 +52,9 @@
 }
 .scale-bounce-anim{
     animation: scale-bounce .5s linear infinite alternate;
+}
+.big-scale-bounce-anim{
+    animation: big-scale-bounce .25s linear infinite alternate;
 }
 
 @keyframes smartguy-anim{
