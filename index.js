@@ -1,10 +1,11 @@
-const divAmount = 28
+const divAmount = 32
 
 let addsShown = 0;
 
 function generateGridCSS(){
     let str = "";
     for(let i = 1; i <= divAmount; i++){
+        //str+=".div"+i+"{background:"+getColor()+";opacity:0}\n"
         str+=".div"+i+"{background:"+getColor()+";}\n"
     }
     let style = document.createElement("style");
@@ -43,10 +44,12 @@ frame()
 
 function showAd(){
     addsShown++;
-    if(addsShown>28){
+    if(addsShown>divAmount/2){
         return;
     }
-    document.querySelector(".div"+addsShown).style.display="block";
+    document.querySelector(".div" + addsShown).style.opacity = "1";
+    document.querySelector(".div" + (divAmount-addsShown)).style.opacity = "1";
+
 }
 
 window.onload = ()=>{

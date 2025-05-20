@@ -66,6 +66,7 @@ img{
 .div6{
     display:flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 .div6 img{
     width:50%;
