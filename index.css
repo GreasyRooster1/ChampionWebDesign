@@ -84,3 +84,10 @@ img{
 .div25 img{
     animation: smartguy-anim 1s infinite linear forwards;
 }
+.div21{
+    overflow: clip;
+}
+.aisforapple{
+    width:100%;
+    height:50%;
+}

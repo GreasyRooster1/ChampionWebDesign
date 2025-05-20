@@ -5,8 +5,8 @@ let addsShown = 0;
 function generateGridCSS(){
     let str = "";
     for(let i = 1; i <= divAmount; i++){
-        //str+=".div"+i+"{background:"+getColor()+";opacity:0}\n"
-        str+=".div"+i+"{background:"+getColor()+";}\n"
+        // str+=".div"+i+"{opacity:0}\n"
+         str+=".div"+i+"{background:"+getColor()+";}\n"
     }
     let style = document.createElement("style");
     style.innerHTML = str;
