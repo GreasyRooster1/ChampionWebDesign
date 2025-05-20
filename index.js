@@ -1,6 +1,6 @@
 const divAmount = 28
 
-
+let addsShown = 0;
 
 function generateGridCSS(){
     let str = "";
@@ -30,7 +30,7 @@ function getColor(){
 }
 
 function frame(){
-    if(Math.floor(Math.random()*100)===0){
+    if(Math.floor(Math.random()*500)===0){
         document.body.style = "filter:blur(5px)";
         setTimeout(()=>{
             document.body.style = "filter:blur(1px)";
@@ -39,6 +39,16 @@ function frame(){
     requestAnimationFrame(frame);
 }
 frame()
+
+
+function showAd(){
+    addsShown++;
+    if(addsShown>28){
+        return;
+    }
+    document.querySelector(".div"+addsShown).style.display="block";
+}
+
 window.onload = ()=>{
     generateGridCSS();
 }
