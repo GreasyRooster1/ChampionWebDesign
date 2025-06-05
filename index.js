@@ -56,7 +56,7 @@ function showAd(){
 }
 setTimeout(()=>{
     setInterval(showAd,2500)
-},10000)
+},20000)
 
 window.onload = ()=>{
     generateGridCSS();
