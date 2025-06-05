@@ -37,7 +37,7 @@ img{
 
 
 .div3{
-    background-image: url("./crazy.gif");
+    background-image: url("./assets/crazy.gif");
 }
 
 
@@ -86,8 +86,13 @@ img{
 }
 .div21{
     overflow: clip;
+    display:flex;
+    /*flex-wrap: wrap;*/
 }
-.aisforapple{
+.div21 img{
     width:100%;
     height:50%;
+}
+
+.div24 img{
 }

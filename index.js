@@ -5,7 +5,7 @@ let addsShown = 0;
 function generateGridCSS(){
     let str = "";
     for(let i = 1; i <= divAmount; i++){
-        // str+=".div"+i+"{opacity:0}\n"
+         str+=".div"+i+"{opacity:0}\n"
          str+=".div"+i+"{background:"+getColor()+";}\n"
     }
     let style = document.createElement("style");
@@ -51,6 +51,8 @@ function showAd(){
     document.querySelector(".div" + (divAmount-addsShown)).style.opacity = "1";
 
 }
+
+setInterval(showAd,2500)
 
 window.onload = ()=>{
     generateGridCSS();
