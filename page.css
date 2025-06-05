@@ -1,60 +1,108 @@
 .page{
     width: 100vw;
     height: 100vh;
+    background: #f8f9fa;
+    color: #202122;
+}
+.page-image{
+    width:25%;
+    display:inline-block;
+
+}
+
+
+header {
+    background: white;
+    border-bottom: 1px solid #a2a9b1;
+    padding: 10px 15px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
 
-.page *{
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #000066;
 }
 
-.center-content{
-    margin-top: 1%;
-    width:80vw;
-    align-items: center;
-    display:flex;
-    flex-direction: column;
+.search-box input {
+    padding: 5px;
+    font-size: 1em;
 }
 
-.title{
-    font-size:2.5rem;
-    border-bottom: 1px grey solid;
+.search-box button {
+    padding: 6px 10px;
+    font-size: 1em;
+    background-color: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    cursor: pointer;
 }
 
-.subtitle{
-    font-size: 1.5rem;
-    color:grey;
+.sidebar {
+    width: 200px;
+    float: left;
+    background: #f0f0f0;
+    border-right: 1px solid #ccc;
+    padding: 15px;
+    box-sizing: border-box;
+    min-height: calc(100vh - 60px);
 }
 
-.head{
-    width:75%;
-    margin-bottom:3%;
+.sidebar ul {
+    list-style: none;
+    padding: 0;
 }
 
-.main-content{
-    display: flex;
-    flex-direction: column;
-    border: 1px gray solid;
-    padding:20px;
-    min-height:100vh;
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #0645ad;
+}
+
+main {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+article h1 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+article h2 {
+    border-bottom: 1px solid #ccc;
+    margin-top: 30px;
+}
+
+.toc {
+    background: #f9f9f9;
+    border: 1px solid #a2a9b1;
+    padding: 10px;
+    margin: 15px 0;
+    font-size: 0.9em;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    font-size: 0.85em;
+    color: #777;
+    border-top: 1px solid #ccc;
+    padding: 15px;
+    margin-top: 40px;
+}
+.page {
+    font-family: sans-serif;
+    margin: 0;
+    background: #f8f9fa;
+    color: #202122;
 }
 
 .image-box{
     display: flex;
     flex-direction: row;
-}
-
-.page-image{
-    width:100%;
-}
-
-.page-text{
-    font-size:1.2rem;
-    text-indent: 2em;
-}
-
-.page-heading{
-    font-weight: bold;
-    font-size: 1.2rem;
 }
