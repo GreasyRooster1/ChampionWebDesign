@@ -1,8 +1,9 @@
 .page{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background: #f8f9fa;
     color: #202122;
+    font-size:1.1rem;
 }
 .page-image{
     width:25%;
@@ -42,11 +43,10 @@ header {
 .sidebar {
     width: 200px;
     float: left;
-    background: #f0f0f0;
+    background: #f8f9fa;
     border-right: 1px solid #ccc;
     padding: 15px;
     box-sizing: border-box;
-    min-height: calc(100vh - 60px);
 }
 
 .sidebar ul {
