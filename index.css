@@ -1,7 +1,6 @@
 body{
     margin:0;
     padding: 0;
-    filter: blur(1px);
 }
 
 img{
@@ -12,9 +11,11 @@ img{
 .parent{
     width:100vw;
     height:100vh;
+    margin-top:-100vh;
 }
 .parent > *{
     overflow: clip;
+    pointer-events: none;
 }
 
 .div1{

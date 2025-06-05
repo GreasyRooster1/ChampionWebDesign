@@ -39,7 +39,7 @@ function frame(){
     }
     requestAnimationFrame(frame);
 }
-frame()
+
 
 
 function showAd(){
@@ -47,12 +47,16 @@ function showAd(){
     if(addsShown>divAmount/2){
         return;
     }
+    if(addsShown===5){
+        frame()
+    }
     document.querySelector(".div" + addsShown).style.opacity = "1";
     document.querySelector(".div" + (divAmount-addsShown)).style.opacity = "1";
 
 }
-
-setInterval(showAd,2500)
+setTimeout(()=>{
+    setInterval(showAd,2500)
+},10000)
 
 window.onload = ()=>{
     generateGridCSS();
