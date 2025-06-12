@@ -32,9 +32,9 @@ function getColor(){
 
 function frame(){
     if(Math.floor(Math.random()*500)===0){
-        document.body.style = "filter:blur(5px)";
+        document.body.parentElement.style = "filter:blur(5px)";
         setTimeout(()=>{
-            document.body.style = "filter:blur(1px)";
+            document.body.parentElement.style = "filter:blur(1px)";
         }, 100);
     }
     requestAnimationFrame(frame);
